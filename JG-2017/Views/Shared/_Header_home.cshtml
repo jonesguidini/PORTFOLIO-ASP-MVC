@@ -1,0 +1,28 @@
+﻿<header>
+    <div class="container">
+        <div class="languages">
+            <div>@JG_2017.Resources.Global.Languages</div>
+            <div>
+                <a class="@ViewBag.LangPt" href="@Url.Action("ChangeLanguage", "Config", new { Languageabbreviation = "pt", Ac = ViewContext.RouteData.Values["action"] }, null)"><img src="~/Content/images/ico-flag-brazil.png" alt="flag brazil portuguese"></a>
+                <a class="@ViewBag.LangEng" href="@Url.Action("ChangeLanguage", "Config", new { Languageabbreviation = "en", Ac = ViewContext.RouteData.Values["action"] }, null)"><img src="~/Content/images/ico-flag-usa.png" alt="flag usa english"></a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="~/Content/images/logo-top-home.png" alt="Logo top">
+        </div>
+        <div class="toggle_celular">
+            <div><a href="javascript:;" id="bt_toggle"><i class="fa fa-bars"></i></a></div>
+        </div>
+        <nav class="menu-header">
+            <ul>
+                <li>@Html.ActionLink(JG_2017.Resources.Global.Home, "Home", "Page")</li>
+                <li>@Html.ActionLink(JG_2017.Resources.Global.About_me, "AboutMe", "Page")</li>
+                <li>@Html.ActionLink(JG_2017.Resources.Global.Skills, "Skills", "Page")</li>
+                <li>@Html.ActionLink(JG_2017.Resources.Global.Portfolio, "Portfolio", "Page")</li>
+                <li>@Html.ActionLink(JG_2017.Resources.Global.Contact, "Contact", "Page")</li>
+            </ul>
+        </nav>
+        <div class="port-text-header">@JG_2017.Resources.Global.MessageTextHeader</div>
+    </div>
+    
+</header>

@@ -1,0 +1,108 @@
+header
+  background-image: url('../images/background-top-contact.jpg')
+
+.content
+  margin-bottom: 40px
+
+  div.sn-column
+    margin-top: -10px //to compensate spacing
+    margin-bottom: -30px
+
+.sn-list
+  margin-bottom: -50px
+  ul
+    +clearfix
+    +make-row
+    li
+      +make-sm-column(6)
+      +make-lg-column(4)
+      +make-md-column(4)
+
+      +breakpoint($celular-vertical)
+        +make-xs-column(6)
+
+      +breakpoint($celular)
+        +make-xs-column(12)
+        margin-bottom: 0px
+        margin-top: 0px //to compensate spacing
+
+      a
+        div.sn
+          width: 100%
+          padding: 10px
+          display: flex
+          flex-direction: row
+          background: #fff
+          width: 100%
+          padding: 10px 10px
+          +border-radius(10px 10px 10px 10px)
+          +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.05))
+          margin-bottom: 20px
+          +breakpoint($celular)
+            margin-bottom: 10px
+          background: #fff
+          height: 54px
+
+        .info-sn
+          display: flex
+          flex-direction: column
+          flex-grow: 1
+
+        .logo-sn
+          width: 3em
+          svg
+            float: left
+            max-width: 2.5em !important
+            margin-top: 2px
+            margin-left: 4px
+            margin-right: 8px
+          i
+            float: left
+            font-size: 2.5em !important
+            color: #587c82
+            margin-right: 6px
+
+        .flexible-info-sn
+          flex-grow: 1
+
+          p
+            width: 100%
+            color: #0d7499
+            font-weight: bold
+            margin-top: -3px
+            float: left
+            +font-size(20px)
+            +breakpoint($celular-vertical)
+              +font-size(18px)
+            +breakpoint($celular)
+              +font-size(20px)
+              margin-top: -2px
+            border-bottom: 2px dotted #ccc
+            padding-bottom: 2px
+
+        .flexible-info-sn-desc
+          margin-top: -10px
+          color: #000
+          +font-size(21px)
+          +breakpoint($celular-vertical)
+            +font-size(18px)
+          +breakpoint($celular)
+            +font-size(21px)
+
+      a:hover
+        div.sn
+          background: #51828a
+          +boxShadow(4px 4px 2px 0px #ccc)
+
+        .logo-sn
+          svg
+            path
+              fill: #fff
+          i
+            color: #fff
+
+        .flexible-info-sn
+          p
+            color: #fff
+        .flexible-info-sn-desc
+          color: #fff

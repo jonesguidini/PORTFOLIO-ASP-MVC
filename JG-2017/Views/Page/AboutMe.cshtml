@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = ViewBag.TitleHeader;
+}
+
+@section imports{
+    @Styles.Render("~/Content/css/aboutme.css")
+}
+
+<div class="container">
+    <section class="introduction">
+        <div class="text-about-me">
+            <img src="~/Content/images/about_me/foto-about-me-01.jpg" alt="Photo">
+            <h2>@JG_2017.Resources.Global.TitlePage_AboutMe</h2>
+            @Html.Raw(@JG_2017.Resources.Global.SubInfoPage_AboutMe)
+        </div>
+    </section>
+</div>
+

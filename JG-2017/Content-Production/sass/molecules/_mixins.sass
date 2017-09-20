@@ -1,0 +1,99 @@
+/* ======== Cores */
+$preto: #000
+$branco: white
+$azul: #31b1e7
+$azul-claro: #cadbdc
+$laranja: orange
+$verde: #9ad15e
+$background-footer: #253a40 //the same of general background, you can change here if you want a different color
+
+/* ======== Font */
+$light: 300
+$regular: 400
+$bold: 700
+
+$pc: min-width 1000px
+$tablet: max-width 991px
+$tablet-vertical: max-width 601px
+$celular: max-width 440px
+$celular-vertical: max-width 640px
+
+
+=boxShadow($base)
+  -webkit-box-shadow: $base
+  -moz-box-shadow: $base
+  box-shadow: $base
+
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+=GradientWithImage($image,$angle,$gradient1,$gradient2)
+  background-image: url($image)
+  //background-image: url($image) -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: url($image) -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image: url($image) -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image: url($image) -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image: url($image) -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image: url($image) linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+/* ======== Outros */
+=transition($transition...)
+  -moz-transition:    all $transition linear
+  -o-transition:      all $transition linear
+  -webkit-transition: all $transition linear
+  transition:         all $transition linear
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+=font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+=opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)
+
+/* ======== Background Color Opacity */
+=background-opacity($color: #000, $opacity: 0.85)
+  background: $color
+  background: rgba($color, $opacity)
+
+/* ======== Columns */
+=columns($count: 3, $gap: 10)
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)
+
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content

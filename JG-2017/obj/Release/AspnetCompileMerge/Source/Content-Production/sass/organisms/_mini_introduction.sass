@@ -1,0 +1,34 @@
+//BREAKPOINT GERAL -------------------------------------------------
+section.introduction
+  h2
+    margin: 0
+    margin: 0px 0px 4px 0px
+    +breakpoint($celular)
+      display: block
+      margin-top: 20px
+
+  +flexbox
+  +align-items(center)
+
+  +breakpoint($celular)
+    display: block
+
+.mini-info-profile
+  margin-left: 4px
+  text-align: justify
+  +make-sm-column(12)
+
+  +breakpoint($celular)
+    margin-left: 0px
+    text-align: justify
+    text-align-last: center
+    margin-top: -15px
+
+  p
+    margin: 10px 0px 15px 0px
+
+.mini-photo-profile
+  +breakpoint($celular)
+    text-align: center
+  img
+    width: 140px

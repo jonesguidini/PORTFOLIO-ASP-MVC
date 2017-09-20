@@ -1,0 +1,114 @@
+.bts-shortcuts
+  +flexbox
+  +align-items(center)
+  +justify-content(space-between)
+  margin: 0px 0px
+  +breakpoint($celular)
+    display: block
+    padding: 10px 0px
+
+  +breakpoint($celular-vertical)
+    a
+      +font-size(37px)
+      div.title
+        margin-top: 0px
+      div.icon
+        i
+          +font-size(38px)
+
+  +breakpoint($tablet-vertical)
+    a
+      +font-size(34px)
+      div.title
+        margin-top: 0px
+      div.icon
+        i
+          +font-size(38px)
+
+.bt-link-about-me
+  +font-size(22px)
+  +border-radius(10px 0px 10px 0px)
+  text-decoration: none
+  line-height: 2
+  padding: 8px 16px
+  background: #0b9795
+  color: #fff
+
+  &:hover, &:active, &:focus
+    color: #fff
+    background: #08606d
+
+.toggle_celular
+  z-index: 1000
+  display: none
+  color: $branco
+  float: left
+  cursor: pointer
+  margin-bottom: -1px
+  +font-size(18px)
+  text-align: center
+  width: 100%
+  +breakpoint($celular)
+    visibility: visible
+    display: block
+
+  & a
+    padding: 0px 8px
+    background: #4a9db1
+    +font-size(50px)
+    color: #fff
+
+  & a:hover
+    color: #fff
+    background: #0b495a
+
+.bt-large-shortcut
+  +flexbox
+  +make-sm-column(3.8)
+  +font-size(60px)
+  +border-radius(15px 0px 15px 0px)
+  +justify-content(center)
+  +boxShadow(3px 3px #c6c5c0)
+  background: #fff
+  padding: 25px 14px
+  text-align: center
+  color: #478088
+  position: relative
+  margin: 35px 0px
+
+  .title
+    +breakpoint($celular)
+    +breakpoint($tablet)
+      margin-top: 2px
+
+  & div
+    display: inline
+
+    & .fa
+      +font-size(90px)
+      margin-right: 12px
+
+  &:hover, &:active, &:focus
+    +transition(.1s)
+    color: #405b64
+    +gradient(180deg, #d8ecf3, #fff)
+    box-shadow: 3px 3px #999
+    animation: moveFromTop 300ms ease-in-out
+
+  +breakpoint($celular)
+    margin: 18px 0px
+
+  +breakpoint($tablet)
+    +font-size(40px)
+    padding: 18px 10px
+    border: 7px solid #fff
+
+    & div .fa
+        margin-right: 8px
+        +font-size(62px)
+
+    &:before
+      top: -8px
+      left: -8px
+      right: -8px
+      bottom: -8px

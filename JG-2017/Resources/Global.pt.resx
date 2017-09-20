@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_me" xml:space="preserve">
+    <value>Sobre Mim</value>
+  </data>
+  <data name="BtAboutMe_Home" xml:space="preserve">
+    <value>Clique para saber mais sobre mim</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contato</value>
+  </data>
+  <data name="Copyright_Footer" xml:space="preserve">
+    <value>Copyright © 2017 - Todos direitos reservados.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="Languages" xml:space="preserve">
+    <value>Idiomas</value>
+  </data>
+  <data name="MessageTextHeader" xml:space="preserve">
+    <value>"O homem que não acredita em si mesmo não acredita em mais nada.” Roy L. Smith</value>
+  </data>
+  <data name="Portfolio" xml:space="preserve">
+    <value>Portfólio</value>
+  </data>
+  <data name="Skills" xml:space="preserve">
+    <value>Habilidades</value>
+  </data>
+  <data name="SubInfoPage_AboutMe" xml:space="preserve">
+    <value>&lt;p&gt;Olá, meu nome é Jones Guidini. Sou um entusiasta por tecnologia desde criança. Fui aquele tipo de garoto que gostava de desmontar os brinquedos eletrônicos para entender como eles funcionavam por dentro. O tempo passa, mas a paixão por tecnologia só aumenta. O que sempre me mantém disposto a aprender cada vez mais é a curiosidade. Através da mesma pude conhecer o maravilhoso mundo de desenvolvimento web. Quando comecei a ler o primeiro livro sobre HTML eu nem tinha um computador. &lt;/p&gt;
+&lt;p&gt;Sou graduado em Sistema de Informações, com MBA em Engenharia de Software e mais de 12 anos de experiência como desenvolvedor web eu continuo me considerando um aprendiz. Durante esses 12 anos eu tenho trabalhado com diversas tecnologias. Comecei como web designer (front-end), com o tempo senti a necessidade de ir além, então estudei e comecei a desenvolver os projetos utilizando tecnologias back-end. Nos últimos 5 anos tenho trabalhado com a maravilhosa plataforma .NET (ASP MVC, C#, Entity Framework, SQL e outras tecnologias relacionadas) em paralelo com tecnologias front-end, que eu venho sempre atualizando e aprendendo novos frameworks. Dessa maneira tento me manter sempre atualizado com as tendências do mercado de TI. &lt;/p&gt;
+
+&lt;p&gt;Hoje divido meu tempo entre as coisas que eu mais amo: Deus, minha querida esposa e minha profissão. Como ambos se dão muito bem, consequentemente sou uma pessoa muito feliz e sempre disposto a seguir adiante enfrentando novos desafios. &lt;/p&gt;
+
+&lt;p&gt;Caso esteja interessado em saber mais sobre mim visite as outras seções do site.  E se você é um entusiasta por tecnologias como eu e gostaria de discutir propostas e projetos desafiadores, por favor sinta-se à vontade em me contatar. Será um prazer conversar com você! &lt;/p&gt;
+
+&lt;p&gt;Até breve. &lt;/p&gt;</value>
+  </data>
+  <data name="SubInfoPage_Contact" xml:space="preserve">
+    <value>&lt;p&gt;Se você quer me contactar você pode usar os seguintes meios abaixo. Por favor, escolha o mais conveniente a você. Estou ansioso por receber sua mensagem e prometo respondê-la o mais rápido possível.&lt;/p&gt;</value>
+  </data>
+  <data name="SubInfoPage_Home" xml:space="preserve">
+    <value>&lt;p&gt;Bacharel em Análise de Sistemas com MBA em Engenharia de Software e desenvolvedor web qualificado com 12 anos de experiência em desenvolvimento front-end e back-end. Reconhecido ao longo da carreira por profissionalismo e ótimos resultados apresentados nas diversas empresas por onde trabalhei. Durante esse período tenho trabalhado com diversas tecnologias como: PHP, CakePHP, MySql e etc. Nos últimos 4-5 anos tenho direcionado meus estudos e trabalho para a plataforma .NET com C#, SQL Server, ASP MVC, .NET Core, Entity Framework, Linq, e outras techs. Estou sempre disposto a oferecer meu sólido background e a aprender mais sempre que necessário.&lt;/p&gt;</value>
+  </data>
+  <data name="SubInfoPage_Portfolio" xml:space="preserve">
+    <value>&lt;p&gt;Se você está curioso para saber o que eu já fiz como desenvolvedor web, você está no lugar certo. Aqui você pode conhecer alguns dos meus trabalhos que estão organizados por categorias. Portanto, se você está interessado em ver uma categoria específica, clique sobre o nome da categoria e irá abrir uma lista de trabalhos relacionados.&lt;/p&gt;</value>
+  </data>
+  <data name="SubInfoPage_Skills" xml:space="preserve">
+    <value>&lt;p&gt;Através desses últimos 12 anos, eu tenho aprendido amplamente sobre tecnologias usadas para desenvolvimento web. Como desenvolvedor front e back-end tenho juntado conhecimento em diferentes tecnologias. Algumas delas foram descontinuadas, e outras novas acrescentadas. Você pode conhecer algumas delas abaixo. Estão listadas por categorias. Divirta-se!&lt;/p&gt;</value>
+  </data>
+  <data name="SubLink_envelopes_Portfolio" xml:space="preserve">
+    <value>ARTES GRÁFICAS - ENVELOPES</value>
+  </data>
+  <data name="SubLink_logos_Portfolio" xml:space="preserve">
+    <value>ARTES GRÁFICAS - LOGOMARCAS</value>
+  </data>
+  <data name="SubLink_others_Portfolio" xml:space="preserve">
+    <value>ARTES GRÁFICAS - OUTROS</value>
+  </data>
+  <data name="SubLink_websites_Portfolio" xml:space="preserve">
+    <value>WEBSITES / SISTEMAS</value>
+  </data>
+  <data name="SubtitleLink_envelope_Portfolio" xml:space="preserve">
+    <value>Abrir envelope</value>
+  </data>
+  <data name="SubtitleLink_logo_Portfolio" xml:space="preserve">
+    <value>Abrir logomarca</value>
+  </data>
+  <data name="SubtitleLink_others_Portfolio" xml:space="preserve">
+    <value>Abrir arte grafica</value>
+  </data>
+  <data name="SubtitleLink_website_Portfolio" xml:space="preserve">
+    <value>Visitar website</value>
+  </data>
+  <data name="Subtitle_backend_Skill" xml:space="preserve">
+    <value>TECNOLOGIAS BACK-END</value>
+  </data>
+  <data name="Subtitle_designtools_Skills" xml:space="preserve">
+    <value>FERRAMENTAS DE DESIGN</value>
+  </data>
+  <data name="Subtitle_frontend_Skills" xml:space="preserve">
+    <value>TECNOLOGIAS FRONT-END</value>
+  </data>
+  <data name="Subtitle_howto_Contact" xml:space="preserve">
+    <value>COMO VOCÊ PODE FALAR COMIGO?</value>
+  </data>
+  <data name="Subtitle_ides_Skills" xml:space="preserve">
+    <value>IDE'S E EDITORES DE CÓDIGO</value>
+  </data>
+  <data name="Subtitle_language_eng_Skills" xml:space="preserve">
+    <value>INGLÊS</value>
+  </data>
+  <data name="Subtitle_language_pt_Skills" xml:space="preserve">
+    <value>PORTUGUÊS</value>
+  </data>
+  <data name="Subtitle_language_Skills" xml:space="preserve">
+    <value>IDIOMAS</value>
+  </data>
+  <data name="Subtitle_versioningtools_Skills" xml:space="preserve">
+    <value>FERRAMENTAS DE VERSIONAMENTO</value>
+  </data>
+  <data name="Tag_phone_Contact" xml:space="preserve">
+    <value>TELEFONE</value>
+  </data>
+  <data name="TitlePage_AboutMe" xml:space="preserve">
+    <value>Sobre mim</value>
+  </data>
+  <data name="TitlePage_Contact" xml:space="preserve">
+    <value>Quer falar comigo?</value>
+  </data>
+  <data name="TitlePage_Home" xml:space="preserve">
+    <value>Quem sou?</value>
+  </data>
+  <data name="TitlePage_Portfolio" xml:space="preserve">
+    <value>O que já fiz?</value>
+  </data>
+  <data name="TitlePage_Skills" xml:space="preserve">
+    <value>O que sei fazer?</value>
+  </data>
+  <data name="ConfigLang" xml:space="preserve">
+    <value>pt-br</value>
+  </data>
+  <data name="MetaTagsDescription" xml:space="preserve">
+    <value>Portfólio Online Jones Guidini - (Desenvolvedor WEB &amp; .NET Developer)</value>
+  </data>
+  <data name="MetaTagsKeywords" xml:space="preserve">
+    <value>sites,web,desenvolvimento,programador,desenvolvedor web,analista de sistema,analista de software,programador,brasilia,df,seu site,produto,designer,design,php,c#,asp,mvc,cakephp,ingles,magento,HTML,CSS,XML,JavaScript, angularjs, .net core</value>
+  </data>
+  <data name="MetaTagsSiteName" xml:space="preserve">
+    <value>JONES GUIDINI - DESENVOLVEDOR WEB</value>
+  </data>
+  <data name="MetaTagsTitle" xml:space="preserve">
+    <value>JONES GUIDINI - DESENVOLVEDOR WEB </value>
+  </data>
+</root>

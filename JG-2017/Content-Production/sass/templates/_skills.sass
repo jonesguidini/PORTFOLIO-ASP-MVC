@@ -1,0 +1,99 @@
+header
+  background-image: url('../images/background-top-skills.jpg')
+
+.content
+  +clearfix
+  +make-row
+  div.sk-column
+    margin-top: -10px //to compensate spacing
+    margin-bottom: -30px
+    +make-sm-column(4)
+    +make-lg-column(4)
+    +make-md-column(4)
+    +breakpoint($celular-vertical)
+      +make-xs-column(4)
+    +breakpoint($celular)
+      +make-xs-column(12)
+      margin-bottom: 0px
+      margin-top: 0px //to compensate spacing
+
+  h4
+    text-align: center
+    font-weight: bolder
+    margin: 0px 0px 8px 0px
+    +breakpoint($tablet)
+      +font-size(25px)
+    +breakpoint($celular-vertical)
+      +font-size(19px)
+    +breakpoint($celular)
+      +font-size(25px)
+    +border-radius(10px 0px 10px 0px)
+    padding: 8px 0px
+    background: #e0ddd2
+
+
+.sk-list
+  margin-bottom: 32px
+  ul
+    li
+      div.skill
+        width: 100%
+        padding: 10px
+        display: flex
+        flex-direction: row
+        background: #fff
+        width: 100%
+        padding: 10px 10px
+        +border-radius(10px 10px 10px 10px)
+        +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.05))
+        margin-bottom: 10px
+        background: #fff
+        height: 54px
+
+      .info-skill
+        display: flex
+        flex-direction: column
+        flex-grow: 1
+
+      .logo-skill
+        width: 3em
+        svg
+          float: left
+          max-width: 2.5em !important
+          margin-right: 6px
+          path
+        i
+          float: left
+          font-size: 2.5em !important
+          color: #587c82
+          margin-right: 6px
+
+      .flexible-info-skill
+        flex-grow: 1
+
+        p
+          color: #0d7499
+          font-weight: bold
+          margin-top: 1px
+          float: left
+          +font-size(20px)
+          +breakpoint($celular-vertical)
+            +font-size(18px)
+          +breakpoint($celular)
+            +font-size(20px)
+            margin-top: 4px
+
+        div.skills-bar
+          float: left
+          margin-top: -10px
+          width: 100%
+          height: 6px
+          padding: 0px
+          background: #e0e0e0
+          border: none
+          +border-radius(10px 10px 10px 10px)
+
+          div
+            margin: 0px
+            border: 0px
+            +gradient(90deg, #78d178, #47a247)

@@ -1,0 +1,41 @@
+﻿<div class="container-full sub-footer">
+    <div class="container">
+        <div class="bts-shortcuts">
+
+            @if (ViewBag.TitleHeader != JG_2017.Resources.Global.About_me.ToUpper() && ViewBag.TitleHeader != JG_2017.Resources.Global.Home.ToUpper())
+            {
+                <a href="@Url.Action("AboutMe", "Page")" class="bt-large-shortcut">
+                    <div class="icon"><i class="fa fa-id-badge"></i></div>
+                    <div class="title">@JG_2017.Resources.Global.About_me.ToUpper()</div>
+                </a>
+            }
+
+            @if (ViewBag.TitleHeader != JG_2017.Resources.Global.Skills.ToUpper())
+            {
+                <a href="@Url.Action("Skills", "Page")" class="bt-large-shortcut">
+                    <div class="icon"><i class="fa fa-drivers-license-o"></i></div>
+                    <div class="title">@JG_2017.Resources.Global.Skills.ToUpper()</div>
+                </a>
+            }
+            
+
+            @if (ViewBag.TitleHeader != JG_2017.Resources.Global.Portfolio.ToUpper())
+            {
+                <a href="@Url.Action("Portfolio", "Page")" class="bt-large-shortcut">
+                    <div class="icon"><i class="fa fa-file-text-o"></i></div>
+                    <div class="title">@JG_2017.Resources.Global.Portfolio.ToUpper()</div>
+                </a>
+            }
+            
+
+            @if (ViewBag.TitleHeader != JG_2017.Resources.Global.Contact.ToUpper())
+            {
+                <a href="@Url.Action("Contact", "Page")" class="bt-large-shortcut">
+                    <div class="icon"><i class="fa fa-phone-square"></i></div>
+                    <div class="title">@JG_2017.Resources.Global.Contact.ToUpper()</div>
+                </a>
+            }
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,186 @@
+header
+  background-image: url('../images/background-top-portfolio.jpg')
+
+.introduction
+  margin-bottom: -10px
+
+.btn-listInfo-port
+  +border-radius(10px 0px 10px 0px)
+  +boxShadow(2px 2px #c6c5c0)
+  +font-size(23px)
+  width: 100%
+  color: #145f85
+  font-weight: 500
+  background: #fff
+  padding: 10px
+  cursor: pointer
+  margin-bottom: 5px
+
+  i
+    margin: 0px 4px
+
+.btn-listInfo-port:hover
+  background: #0c7a8b
+  color: #fff
+  +boxShadow(2px 2px #fff)
+
+.link-selected
+  background: #85a3a8
+  color: #fff
+  +boxShadow(2px 2px #fff)
+
+.introduction
+  +breakpoint($celular)
+    margin-left: 0px
+    text-align: justify
+    text-align-last: center
+
+
+//CSS LISTA WEBSITES
+.cx-website-list, .cx-logos-list, .cx-envelopes-list
+  ul
+    +clearfix
+    +make-row
+    margin-bottom: 0px
+
+    li
+      overflow: hidden
+      margin: 12.5px 0px
+
+      +make-sm-column(4)
+      +make-lg-column(4)
+      +make-md-column(3)
+      +make-xs-column(4)
+
+      +breakpoint($celular-vertical)
+        +make-xs-column(4)
+
+      +breakpoint($celular)
+        +make-xs-column(12)
+        margin: 12.5px 0px 5px 0px
+
+
+      figure
+        padding: 9px
+        background: $branco
+        +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
+
+        vertical-align: middle
+        display: inline-block
+
+        +breakpoint($celular)
+          width: 350px
+          overflow: hidden
+          margin: 0
+          border-bottom: 10px solid #fff
+
+        &:hover
+          a
+            +opacity(1)
+
+        img
+          +img-responsive
+          +breakpoint($celular)
+            display: block
+            width: 100%
+            margin: 0px 0px -25% 0
+
+        figcaption
+          background: #010e10
+          a
+            text-align: center
+            text-transform: uppercase
+            position: absolute
+            z-index: 2
+            color: $branco
+            width: 100%
+            height: 100%
+            top: 29%
+            +breakpoint($celular-vertical)
+              top: 18% !important
+            +opacity(0)
+            h3
+              margin-top: 4px
+              color: #6ad9ea !important
+              +font-size(35px)
+              +breakpoint($celular-vertical)
+                +font-size(28px)
+                margin-top: 15px
+              +breakpoint($celular)
+                +font-size(44px)
+                margin-top: 25px
+
+
+            p
+              +font-size(19px)
+              padding: 6px 0px 0px 0px
+              +breakpoint($celular-vertical)
+                +font-size(18px)
+
+            p.subtitle-port-link
+              color: #fff
+              margin-top: -5px
+              padding: 0px
+              text-transform: lowercase !important
+            i
+              +font-size(38px)
+              margin-top: 0px
+          a.extra-top-ajust
+            top: 23%
+
+//CSS LISTA LOGOS
+.cx-logos-list
+  ul
+    li
+      +make-sm-column(4)
+      +make-lg-column(4)
+      +make-md-column(4)
+
+      +breakpoint($celular-vertical)
+        +make-xs-column(4)
+
+      +breakpoint($celular)
+        +make-xs-column(12)
+
+      figure
+        figcaption
+          a
+            top: 37%
+            p.subtitle-port-link
+              margin-top: -5px
+
+              display: block
+            i
+              margin-top: 0px
+            h3
+              margin-top: -5px
+
+//CSS LISTA ENVELOPES
+.cx-envelopes-list
+  ul
+    li
+      +make-sm-column(4)
+      +make-lg-column(3)
+      +make-md-column(3)
+      overflow: hidden
+      margin: 12.5px 0px
+      text-align: center
+
+      +breakpoint($celular-vertical)
+        +make-xs-column(4)
+
+      +breakpoint($celular)
+        +make-xs-column(12)
+        margin: 12.5px 0px 5px 0px
+
+      figure
+        figcaption
+          a
+            top: 37%
+            p.subtitle-port-link
+              margin-top: -5px
+              display: block
+            i
+              margin-top: 0px
+            h3
+              margin-top: -10px

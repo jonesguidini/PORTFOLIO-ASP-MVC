@@ -1,0 +1,28 @@
+{
+  "name": "PORTIFOLIO",
+  "homepage": "https://github.com/jonesguidini/portifolio",
+  "authors": [
+    "jonesguidini <jonesguidini@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "boostrap#^3.3.7",
+    "font-awesome": "^4.7.0",
+    "bootstrap-sass": "^3.3.7",
+    "breakpoint-sass": "^2.7.1",
+    "sass-flex-mixin": "^1.0.3",
+    "devicon": "*"
+  },
+  "devDependencies": {
+    "imagehover.css": "*"
+  }
+}

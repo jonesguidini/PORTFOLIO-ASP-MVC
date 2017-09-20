@@ -1,0 +1,590 @@
+﻿@{
+    ViewBag.Title = ViewBag.TitleHeader;
+}
+
+@section imports {
+    @Styles.Render("~/Content/css/aboutme.css")
+
+    <!-- FANCYBOX CONFIGURATION -->
+    @Scripts.Render("~/Content/scripts/_fancybox/lib/jquery-1.10.1.min.js")
+    @Scripts.Render("~/Content/scripts/_fancybox/lib/jquery.mousewheel-3.0.6.pack.js")
+    @Scripts.Render("~/Content/scripts/_fancybox/source/jquery.fancybox.js?v=2.1.5")
+    @Scripts.Render("~/Content/scripts/jquery.simulate.js")
+
+    @Styles.Render("~/Content/scripts/_fancybox/source/jquery.fancybox.css?v=2.1.5")
+    @Scripts.Render("~/Content/scripts/templates/_portfolio.js")
+}
+
+
+<link href="@Url.Content("~/Content/css/portfolio.css")" rel="stylesheet" type="text/css" />
+
+<div class="container">
+    <section class="introduction">
+        <h2>@JG_2017.Resources.Global.TitlePage_Portfolio</h2>
+        @Html.Raw(@JG_2017.Resources.Global.SubInfoPage_Portfolio)
+    </section>
+
+    <section class="content">
+        <!-- WEBSITES -->
+        <div id="_cx-websites-list" class="port-websites">
+            <a id="_link_websites" href="#_cx-websites-list"></a>
+            <div class="btn-listInfo-port"><i class="fa fa-desktop" aria-hidden="true"></i> @JG_2017.Resources.Global.SubLink_websites_Portfolio <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div id="_cx-website-list" class="cx-website-list list-collapse" style="display: none;">
+                <ul>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-visuweb.jpg" alt="VISUWEB">
+                            <figcaption>
+                                <a href="http://www.visuweb.com.br" target="_blank">
+                                    <h3>VISUWEB</h3>
+                                    @*<p>visuweb.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-ascenbra.jpg" alt="ASCENBRA">
+                            <figcaption>
+                                <a href="http://ascenbra.com" target="_blank">
+                                    <h3>ASCENBRA</h3>
+                                    @*<p>ascenbra.com</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-frutosdaterra.jpg" alt="FRUTOS DA TERRA">
+                            <figcaption>
+                                <a href="http://www.frutosdaterraltda.com.br" target="_blank">
+                                    <h3>FRUTOS DA TERRA</h3>
+                                    @*<p>frutosdaterraltda.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-gontijo.jpg" alt="GONTIJO ENGENHARIA">
+                            <figcaption>
+                                <a href="http://www.gontijoconstrutora.com.br/" target="_blank" class="extra-top-ajust">
+                                    <h3>GONTIJO <br> CONSTRUTORA</h3>
+                                    @*<p>gontijoconstrutora.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-autogiro.jpg" alt="AUTO GIRO CONSTRUTORA">
+                            <figcaption>
+                                <a href="http://www.autogiroconstrutora.com.br/" target="_blank" class="extra-top-ajust">
+                                    <h3>AUTOGIRO CONSTRUTORA</h3>
+                                    @*<p>autogiroconstrutora.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-casaderepouso.jpg" alt="CASA DE REPOUSO">
+                            <figcaption>
+                                <a href="http://www.samaritanodf.org.br/" target="_blank">
+                                    <h3>CASA DE REPOUSO</h3>
+                                    @*<p>samaritanodf.org.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-bgmoveis.jpg" alt="BG MOVEIS">
+                            <figcaption>
+                                <a href="http://www.bgmoveis.com.br/" target="_blank">
+                                    <h3>BG MOVEIS</h3>
+                                    @*<p>bgmoveis.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-mundoincensos.jpg" alt="MUNDO DOS INCENSOS">
+                            <figcaption>
+                                <a href="http://mundodosincensos.com.br/" target="_blank" class="extra-top-ajust">
+                                    <h3>MUNDO DOS <br> INCENSOS</h3>
+                                    @*<p>mundodosincensos.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-medeiros.jpg" alt="MEDEIROS E ASSOCIADOS">
+                            <figcaption>
+                                <a href="http://medeiroseassociados.com.br" target="_blank" class="extra-top-ajust">
+                                    <h3>MEDEIROS & ASSOCIADOS</h3>
+                                    @*<p>medeiroseassociados.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-romario.jpg" alt="ROMARIO VARGAS">
+                            <figcaption>
+                                <a href="http://romariovargas.com.br" target="_blank">
+                                    <h3>ROMARIO VARGAS</h3>
+                                    @*<p>romariovargas.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-jonesedanielle.jpg" alt="JONES E DANIELLE">
+                            <figcaption>
+                                <a href="http://jonesedanielle.visuweb.com.br/" target="_blank">
+                                    <h3>JONES & DANIELLE</h3>
+                                    @*<p>jonesedanielle.visuweb.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-sigpj.jpg" alt="SIGPJ">
+                            <figcaption>
+                                <a href="http://sigpj.visuhost.com.br/" target="_blank">
+                                    <h3>SIGPJ</h3>
+                                    @*<p>sigpj.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-spadoaprendiz.jpg" alt="SPA DO APRENDIZ">
+                            <figcaption>
+                                <a href="http://spadoaprendiz.visuhost.com.br/" target="_blank">
+                                    <h3>SPA DO APRENDIZ</h3>
+                                    @*<p>spadoaprendiz.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-skillidiomas.jpg" alt="SKILL IDIOMAS">
+                            <figcaption>
+                                <a href="http://skillidiomas.visuhost.com.br/" target="_blank">
+                                    <h3>SKILL IDIOMAS</h3>
+                                    @*<p>skillidiomasceilandia.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-academiapratique.jpg" alt="ACADEMIA PRATIQUE">
+                            <figcaption>
+                                <a href="http://academiapratique.visuweb.com.br/" target="_blank">
+                                    <h3>ACADEMIA PRATIQUE</h3>
+                                    @*<p>academiapratiquedf.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-congressoascenbra.jpg" alt="CONGRESSO ASCENBRA">
+                            <figcaption>
+                                <a href="http://congressocaldas.visuweb.com.br" target="_blank">
+                                    <h3>CONGRESSO CALDAS</h3>
+                                    @*<p>congressocaldas.visuweb.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-congressorio.jpg" alt="CONGRESSO RIO">
+                            <figcaption>
+                                <a href="http://congressorio.visuweb.com.br" target="_blank">
+                                    <h3>CONGRESSO RIO</h3>
+                                    @*<p>congressorio.visuweb.com.br</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/websites/port-site-ortoriso.jpg" alt="ORTORISO">
+                            <figcaption>
+                                <a href="http://ortorisodf.visuweb.com.br/" target="_blank">
+                                    <h3>CLINICA ORTORISO</h3>
+                                    @*<p>ortorisodf.visuweb.com.br/</p>*@
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_website_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LOGOMARCAS -->
+        <div id="_cx-logos-list" class="port-logomarcas">
+            <a id="_link_logo" href="#_cx-logos-list"></a>
+            <div class="btn-listInfo-port"><i class="fa fa-cube" aria-hidden="true"></i> @JG_2017.Resources.Global.SubLink_logos_Portfolio <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div class="cx-logos-list list-collapse" style="display: none;">
+                <ul>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/logos/p/port-logo-nutrivida.jpg" alt="NUTRIVIDA">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-nutrivida.jpg" data-fancybox-group="Logomarcas" title="NUTRIVIDA">
+                                    <h3>NUTRI VIDA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-marcos.jpg" alt="MARCOS SEGURANÇA"><figcaption><a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-marcos.jpg" data-fancybox-group="Logomarcas" title="MARCOS SEGURANÇA"><h3>MARCOS SEGURANÇA</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-misterra.jpg" alt="MARCOS SEGURANÇA"><figcaption><a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-misterra.jpg" data-fancybox-group="Logomarcas" title="MISS TERRA"><h3>MISS TERRA BRASIL</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-paodimel.jpg" alt="PÃO DI MEL"><figcaption><a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-paodimel.jpg" data-fancybox-group="Logomarcas" title="PÃO DI MEL"><h3>PÃO DI MEL</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-portaljovem.jpg" alt="PORTAL JOVEM"><figcaption><a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-portaljovem.jpg" data-fancybox-group="Logomarcas" title="PORTAL JOVEM"><h3>PORTAL JOVEM</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-integranordeste.jpg" alt="INTEGRA NORDESTE"><figcaption><a class="fancybox" href="~/Content/images/portfolio/logos/g/port-logo-integranordeste.jpg" data-fancybox-group="Logomarcas" title="INTEGRA NORDESTE"><h3>INTEGRA NORDESTE</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-gontijo.jpg" alt="GONTIJO ENGENHARIA"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-gontijo.jpg" data-fancybox-group="Logomarcas" title="GONTIJO ENGENHARIA"><h3>GONTIJO ENGENHARIA</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-clicknet.jpg" alt="CLICKNET"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-clicknet.jpg" data-fancybox-group="Logomarcas" title="CLICKNET"><h3>CLICKNET BRASIL</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-coments.jpg" alt="COMENTS"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-coments.jpg" data-fancybox-group="Logomarcas" title="COMENTS"><h3>COMENTS</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-ascenbra.jpg" alt="ASCENBRA"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-ascenbra.jpg" data-fancybox-group="Logomarcas" title="ASCENBRA"><h3>ASCENBRA</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-visuweb.jpg" alt="VISUWEB"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-visuweb.jpg" data-fancybox-group="Logomarcas" title="VISUWEB"><h3>VISUWEB</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                    <li><figure class="imghvr-fade"><img src="~/Content/images/portfolio/logos/p/port-logo-bgmoveis.jpg" alt="BG MOVEIS"><figcaption><a class="fancybox extra-top-ajust" href="~/Content/images/portfolio/logos/g/port-logo-bgmoveis.jpg" data-fancybox-group="Logomarcas" title="BG MOVEIS"><h3>BG MOVEIS PLANEJADOS</h3><p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_logo_Portfolio)</p><i class="fa fa-external-link fa-5" aria-hidden="true"></i></a></figcaption></figure></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ENVELOPES -->
+        <div id="_cx-envelopes-list" class="port-envelopes">
+            <a id="_link_envelopes" href="#_cx-envelopes-list"></a>
+            <div class="btn-listInfo-port"><i class="fa fa-envelope-o" aria-hidden="true"></i> @JG_2017.Resources.Global.SubLink_envelopes_Portfolio <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div class="cx-envelopes-list list-collapse" style="display: none;">
+                <ul>
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-1.jpg" alt="Envelope Assistência Social">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-1.jpg" data-fancybox-group="Envelopes" title="Envelope Assistência Social">
+                                    <h3>ASSISTÊNCIA SOCIAL</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-2.jpg" alt="Envelope Construção e Reforma">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-2.jpg" data-fancybox-group="Envelopes" title="Envelope Construção e Reforma">
+                                    <h3>CONSTRUÇÃO E REFORMA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-3.jpg" alt="Envelope Dizimos e Ofertinhas Kids">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-3.jpg" data-fancybox-group="Envelopes" title="Envelope Dizimos e Ofertinhas Kids">
+                                    <h3>OFERTINHAS KIDS</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-4.jpg" alt="Envelope Primicias e Dízimos (Feminino)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-4.jpg" data-fancybox-group="Envelopes" title="Envelope Primicias e Dízimos (Feminino)">
+                                    <h3>PRIMICIAS E DÍZIMOS</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-5.jpg" alt="Envelope Primicias e Dízimos (Feminino)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-5.jpg" data-fancybox-group="Envelopes" title="Envelope Primicias e Dízimos (Feminino)">
+                                    <h3>PRIMICIAS E DÍZIMOS</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-6.jpg" alt="Envelope Oferta de Gratidão">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-6.jpg" data-fancybox-group="Envelopes" title="Envelope Oferta de Gratidão">
+                                    <h3>OFERTA DE GRATIDÃO</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-7.jpg" alt="Envelope Primicias e Dízimos">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-7.jpg" data-fancybox-group="Envelopes" title="Envelope Primicias e Dízimos">
+                                    <h3>DÍZIMOS E OFERTAS</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-8.jpg" alt="Envelope Primicias e Dízimos (Masculino)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-8.jpg" data-fancybox-group="Envelopes" title="Envelope Primicias e Dízimos (Masculino)">
+                                    <h3>OFERTA MASCULINA </h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-9.jpg" alt="Envelope Santa Ceia">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-9.jpg" data-fancybox-group="Envelopes" title="Envelope Santa Ceia">
+                                    <h3>SANTA CEIA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-10.jpg" alt="Envelope Primicias e Dízimos (Masculino)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-10.jpg" data-fancybox-group="Envelopes" title="Envelope Primicias e Dízimos (Masculino)">
+                                    <h3>OFERTA MASCULINA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-11.jpg" alt="Envelope Oferta de Gratidão">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-11.jpg" data-fancybox-group="Envelopes" title="Envelope Oferta de Gratidão">
+                                    <h3>OFERTA DE GRATIDÃO</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/envelops/p/port-envelop-12.jpg" alt="Envelope Oferta de Gratidão">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/envelops/g/port-envelop-12.jpg" data-fancybox-group="Envelopes" title="Envelope Oferta de Gratidão">
+                                    <h3>OFERTA DE GRATIDÃO</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_envelope_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- OTHERS -->
+        <div id="_cx-others-list" class="port-others">
+            <a id="_link_others" href="#_cx-others-list"></a>
+            <div class="btn-listInfo-port"><i class="fa fa-paint-brush" aria-hidden="true"></i> @JG_2017.Resources.Global.SubLink_others_Portfolio <i class="fa fa-caret-down" aria-hidden="true"></i></div>
+            <div class="cx-envelopes-list list-collapse" style="display: none;">
+                <ul>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-1.jpg" alt="Convite de casamento">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-1.jpg" data-fancybox-group="Envelopes" title="Convite de casamento">
+                                    <h3>CONVITE CASAMENTO</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-2.jpg" alt="Cartão de Visita - MORADA DO SUL">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-2.jpg" data-fancybox-group="Envelopes" title="Cartão de Visita - MORADA DO SUL">
+                                    <h3>CARTÃO DE VISITA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-3.jpg" alt="Cartão de Visita - BG MÓVEIS">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-3.jpg" data-fancybox-group="Envelopes" title="Cartão de Visita - BG MÓVEIS">
+                                    <h3>CARTÃO DE VISITA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-4.jpg" alt="Capa DVD MESTRE JURÍDICO">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-4.jpg" data-fancybox-group="Envelopes" title="Capa DVD MESTRE JURÍDICO">
+                                    <h3>CAPA DVD </h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-5.jpg" alt="DVD MESTRE JURÍDICO">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-5.jpg" data-fancybox-group="Envelopes" title="DVD MESTRE JURÍDICO">
+                                    <h3>ARTE DVD</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-6.jpg" alt="Camiseta ASCENBRA (frente)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-6.jpg" data-fancybox-group="Envelopes" title="Camiseta ASCENBRA (frente)">
+                                    <h3>CAMISETA ASCENBRA (FRENTE)</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-7.jpg" alt="Camiseta ASCENBRA (verso)">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-7.jpg" data-fancybox-group="Envelopes" title="Camiseta ASCENBRA (verso)">
+                                    <h3>CAMISETA ASCENBRA (VERSO)</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                    <li>
+                        <figure class="imghvr-fade">
+                            <img src="~/Content/images/portfolio/others/p/port-others-8.jpg" alt="Crachá ASCENBRA">
+                            <figcaption>
+                                <a class="fancybox" href="~/Content/images/portfolio/others/g/port-others-8.jpg" data-fancybox-group="Envelopes" title="Crachá ASCENBRA">
+                                    <h3>Crachá ASCENBRA</h3>
+                                    <p class="subtitle-port-link">(@JG_2017.Resources.Global.SubtitleLink_others_Portfolio)</p>
+                                    <i class="fa fa-external-link fa-5" aria-hidden="true"></i>
+                                </a>
+                            </figcaption>
+                        </figure>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </section>
+</div>
+

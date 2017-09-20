@@ -1,0 +1,284 @@
+.languages
+  color: $branco
+  float: right
+  +font-size(18.7px)
+  margin: 4px 0px 0px
+  text-align: center
+  div
+    margin-top: 2px
+  a
+    margin: 1px
+    img
+      +opacity(0.5)
+  a:hover
+    img
+      +opacity(1)
+      position: static
+
+  .lang-activeted
+    img
+      +border-radius(0px)
+      border: 2px solid #499ba6
+      +opacity(1)
+
+
+.container-full
+  background: #dfdbce
+
+.menu_celular
+  display: none
+  +breakpoint($celular)
+    width: 200px
+    display: block
+    margin: -20px auto 25px auto
+    z-index: 1000
+    div
+      +background-opacity(#0a5164, 0.8)
+      margin-bottom: 4px
+      +border-radius(20px)
+      padding: 8px
+      text-align: center
+      a
+        color: $branco
+
+.menu-header, .menu-header-home
+  font-family: "Arial Narrow", Arial, sans-serif
+  background: #0a5164
+  +border-radius(20px)
+  padding: 10px 0px 0px 0px
+  width: 580px
+  height: 42px
+  text-align: center
+  margin: 28px auto
+
+  +breakpoint($tablet)
+    width: 550px
+    padding: 16px 0px 0px 0px
+    height: 54px
+    +font-size(28px)
+    margin-bottom: 25px !important
+
+  +breakpoint($tablet-vertical)
+    margin-bottom: 10px !important
+
+  +breakpoint($celular)
+    display: none
+
+  +breakpoint($celular-vertical)
+    width: 550px
+    margin: 25px auto
+    margin-bottom: 14px !important
+
+  ul
+    list-style: none
+    li
+      display: inline
+      margin-right: -4px
+
+      a
+        color: $branco
+        text-transform: uppercase
+        padding: 12px
+        +font-size(26px)
+        +breakpoint($tablet)
+          padding: 12px
+      a:hover
+        color: $branco
+        background: #458293
+        text-decoration: none
+        padding: 12px
+        +breakpoint($tablet)
+          padding: 19px
+
+.menu-header-home
+  margin: 28px auto
+
+
+.lk-celular
+  width: 100%
+
+  ul
+    li
+      background: #0b495a
+      text-align: center
+      border-bottom: 1px solid #2a6371
+      a
+        padding: 8px
+        display: block
+        +font-size(28px)
+        font-weight: lighter
+        letter-spacing: 1.5px
+        color: $branco
+        text-decoration: none
+        width: 100%
+
+      a:hover
+        font-weight: bold
+        background: #06303b
+
+.list-menu-celular-down
+  display: none
+
+.list-menu-celular
+   display: none
+   left: 50%
+   top: 180px
+   width: 200px
+   -webkit-transform: translate(-50%, -50%)
+    -moz-transform: translate(-50%, -50%)
+   transform: translate(-50%, -50%)
+   position: absolute
+   z-index: 1000
+
+
+header
+  min-height: 300px
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: cover
+  clear: both
+  position: relative
+  +boxShadow(0 4px 10px 0 rgba(0, 0, 0, 0.3))
+
+  +breakpoint($tablet)
+    min-height: 480px
+
+  +breakpoint($tablet-vertical)
+    min-height: 380px !important
+
+  +breakpoint($celular-vertical)
+    min-height: 380px !important
+
+    +breakpoint($celular)
+      min-height: 300px !important
+
+  div
+    margin: 0px 0px
+
+.port-logo
+
+  float: left
+  +align-items(center)
+  +make-sm-column(3)
+  text-align: center
+  align-items: stretch
+  margin: auto 0px !important
+  clear: both
+  +breakpoint($celular)
+    width: 100%
+    +make-sm-column(12)
+    margin-top: -20px
+  +breakpoint($celular-vertical)
+    margin-top: 250px
+    width: 100%
+  +breakpoint($tablet)
+    +make-sm-column(12)
+    width: 100%
+
+.port-logo svg
+  width: 220px
+  margin-top: 16px
+  clear: both
+
+  +breakpoint($tablet)
+    width: 250px
+  +breakpoint($celular)
+    width: 200px
+    margin-top: -20px
+  +breakpoint($celular-vertical)
+    width: 200px
+    margin-top: -20px
+
+.port-logo img
+  width: 220px
+  margin-top: 16px
+  clear: both
+
+  +breakpoint($tablet)
+    width: 250px
+  +breakpoint($celular)
+    width: 200px
+    margin-top: -20px
+  +breakpoint($celular-vertical)
+    width: 200px
+    margin-top: -20px
+
+.port-info
+  width: 100%
+  +breakpoint($pc)
+    margin-left: -20px
+  float: left
+  +make-sm-column(6)
+  text-align: center
+  +breakpoint($tablet)
+    clear: both
+    +make-sm-column(12)
+  +breakpoint($celular)
+    +make-sm-column(12)
+    width: 100%
+  +breakpoint($celular-vertical)
+    +make-sm-column(12)
+    width: 100%
+
+.title-header
+  margin: 50px auto 35px auto !important
+  clear: both
+  color: $branco
+  border: 3px solid $branco
+  +border-radius(15px 0px 15px 0px)
+  +boxShadow(1px 2px 5px 0px rgba(0,0,0,0.1))
+  padding: 0px
+  font-size: 50px
+  text-align: center
+  text-transform: uppercase
+  margin-left: 40px !important
+  width: 500px
+  +breakpoint($tablet)
+    width: 400px
+    margin: 34px auto 25px auto !important
+    font-size: 40px
+
+  +breakpoint($celular-vertical)
+    margin: 20px auto 0px auto !important
+    font-size: 30px
+
+  +breakpoint($celular)
+    margin: 34px auto 25px auto !important
+    font-size: 40px
+    width: auto
+
+.port-flags
+  float: left
+  +make-sm-column(3)
+  text-align: right
+  border: 1px solid #ccc
+
+.port-text-header
+  clear: both
+  +make-sm-column(12)
+  text-align: center
+  color: $branco
+  margin-top: -15px
+  +font-size(24px)
+  font-style: italic
+  font-weight: $light
+
+  +breakpoint($celular)
+    display: none
+
+  +breakpoint($tablet-vertical)
+    margin-top: 0px !important
+
+  +breakpoint($tablet)
+    +font-size(22px)
+    margin-top: -15px
+    margin-bottom: 15px
+
+
+.title-page
+  border: 4px solid $branco
+  padding: 15px
+  text-align: center
+  color: $branco
+  h1
+    +font-size(80px)

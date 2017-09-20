@@ -1,0 +1,59 @@
+@import ../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables
+@import ../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins
+@import ../../bower_components/breakpoint-sass/stylesheets/breakpoint
+@import ../../bower_components/sass-flex-mixin/flex
+
+@import molecules/mixins
+@import molecules/reset
+@import molecules/buttons
+
+@import organisms/header_general
+@import organisms/header_home
+@import organisms/footer
+
+
+.introduction
+  margin-top: 20px
+  text-align: justify
+
+  +breakpoint($celular-vertical)
+    margin-left: 0px
+    text-align: justify
+    padding-top: 10px !important
+
+  +breakpoint($celular)
+    margin-left: 0px
+    text-align: justify
+    text-align-last: center
+    padding-top: 0px !important
+
+  h4,h3,h2,h1
+    margin: 0px 0px 10px 0px
+  h3
+    +font-size(40px)
+    font-weight: bold
+
+.sub-footer
+  margin-top: 25px
+
+.content
+  margin-top: 30px
+
+h4.subtitle
+  text-align: center
+  font-weight: bolder
+  margin: 0px 0px 14px 0px
+  +font-size(24px)
+  +breakpoint($tablet)
+    +font-size(25px)
+  +breakpoint($celular-vertical)
+    +font-size(19px)
+  +breakpoint($celular)
+    +font-size(25px)
+    margin: 0px 0px 8px 0px
+  +border-radius(10px 0px 10px 0px)
+  padding: 8px 0px
+  background: #dfdbce
+  color: #4c4c4c
+  text-shadow: 1px 1px 0px #fff
+  +boxShadow(2px 2px 0px 0px #ccc)

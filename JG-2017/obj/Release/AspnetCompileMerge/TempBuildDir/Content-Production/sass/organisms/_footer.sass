@@ -1,0 +1,65 @@
+footer
+  color: $branco
+
+  a
+    color: #58acc2
+  a:hover
+    color: $branco
+
+  .logo-address
+    text-align: center
+    +align-items(top)
+    +breakpoint($celular)
+    +breakpoint($tablet-vertical)
+    +breakpoint($celular-vertical)
+      text-align: center
+      padding-top: 12px
+
+    & div
+      margin: 16px 0px
+      height: 50px
+      align-items: baseline
+      vertical-align: middle
+      text-align: left
+      display: inline-block
+      +breakpoint($celular)
+      +breakpoint($tablet-vertical)
+      +breakpoint($celular-vertical)
+        text-align: center
+        display: block
+        margin: 8px 0px 0px 0px
+
+      img
+        width: 62px
+        margin: 0px 6px
+
+      &::before
+        margin-top: 100px
+
+  .social
+    li
+      display: inline-block
+      .fa
+        font-size: 22px
+        border: 2px dotted $branco
+        +border-radius(25px)
+        padding: 10px
+        width: 48px
+        text-align: center
+        margin-right: 2px
+      a
+        color: #fff
+      a:hover
+        color: #00ffcb
+
+
+.logo-footer, .address-footer
+  padding-top: 3px
+  address
+    a
+      color: #4392d4 !important
+
+.logo-footer
+  a
+    svg
+      margin: 0px 10px
